@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Iniciando os estudos com DOM</h1>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <p>Aqui vai o resultado:</p>
+    <div id="msg" name="msg">Clique aqui!</div>
+    <script>
+        /*
+        -- ACESSANDO DOM VIA TAG: --
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(p1.innerText)
+        corpo.style.background = 'black'
+        */
+        /*
+        -- ACESSANDO DOM VIA ID: --
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+        */
+        /*
+        -- ACESSANDO DOM VIA NAME: --
+        var d = window.document.getElementsByName('msg')[0]
+        d.innerText = 'Olá'
+        */
+        /*
+        -- ACESSANDO DOM VIA QUERY SELECTOR: --
+        var d = window.document.querySelector('div#msg')  . para classe e # para id
+        d.style.color = 'blue'
+        */
+    </script>
+</body>
+</html>

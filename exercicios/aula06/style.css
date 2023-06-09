@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+    background-color: mediumpurple;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-family: monospace;
+}
+
+div {
+    color: white;
+    text-align: center;
+    font-family: monospace;
+}
