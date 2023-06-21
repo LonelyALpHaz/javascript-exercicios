@@ -11,12 +11,16 @@
     <h1>Olá, Mundo!</h1>
     <p>Este site está recebendo um tratamento de dados</p>
     <script>
+        var nome = window.prompt('Qual é o seu nome?')
         var n1 = Number(window.prompt('Digite o primeiro número'))
         var n2 = Number(window.prompt('Digite um outro número:'))
         var s = n1 + n2
+        window.alert(`É um prazer te conhecer, ${nome}`)
         window.alert(`A soma de ${n1} + ${n2} é igual a ${s}`)
-        // + para concatenação
-        // + para adição
+        // + para concatenação (string + string)
+        // + para adição (number + number)
+        // conversão de string > number = Number.parseInt(n)
+        // conversão de string > number = Number.parseFloat(n)
     </script>
 </body>
 </html>
