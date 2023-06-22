@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body {
+    font: normal 20pt monospace;
+}
+
+div#area {
+    background-color: darkorchid;
+    color: white;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*
+div#area:hover {
+    color: red;
+}
+*/
