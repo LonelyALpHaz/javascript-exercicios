@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(10, 100, 190);
+    color: black;
+    font-family: monospace;
+    text-align: center;
+}
+
+h1#title {
+    color: white;
+    padding-top: 20px;
+}
+
+h2#subtitle {
+    color: black;
+    padding-top: 20px;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+    border-radius: 360px;
+}
+
+div#container {
+    text-align: center;
+}
+
+div#section {
+    background-color: white;
+    height: 350px;
+    width: 400px;
+    border-radius: 20px;
+}
