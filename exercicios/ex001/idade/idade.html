@@ -11,11 +11,15 @@
     <div id="container">
         <section>
             <h2>Forneça os dados</h2>
-            Ano de Nascimento: <input type="year" name="ano" id="ano"><br><br>
+            Ano de Nascimento: <input type="year" name="ano" id="nasc"><br><br>
             Sexo: 
-            <input type="checkbox" name="mas" id="mas"> Masculino 
-            <input type="checkbox" name="fem" id="fem"> Feminino<br><br>
-            <input type="button" value="Analisar" id="btn" onclick="analisar()">
+            <form id="check">
+                <input type="checkbox" name="sexo" value="HOMEM"> Masculino 
+                <input type="checkbox" name="sexo" value="MULHER"> Feminino<br><br>
+            </form>
+            <input type="button" value="Analisar" id="btn" onclick="analisar()"><br>
+            <h3 id="label"></h3>
+            <img id="img" src="placeholder" alt="image">
         </section>
     </div>
     <footer>©CursoemVideo</footer>
