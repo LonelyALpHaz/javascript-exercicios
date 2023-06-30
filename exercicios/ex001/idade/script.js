@@ -1,44 +1,65 @@
-var atual = new Date()
-var ano = atual.getFullYear()
-var img = window.document.getElementById('img')
-
 function analisar() {
-    var checkboxes = document.getElementsByName('sexo')
+    // DADOS ADICIONAIS
     var label = document.getElementById('label')
+    var img = document.getElementById('img')
+    var sec = document.getElementById('sec')
+    // IDADE ANALISADA
+    var ano_atual = new Date()
     var nasc = document.getElementById('nasc')
-    var idade = ano - nasc.value
-    var sexoSelecionado = [];
-    console.log(ano)
-    for (var i = 0; i < checkboxes.length; i++) {
-        if (checkboxes[i].checked) {
-            sexoSelecionado.push(checkboxes[i].value);
-            if (sexoSelecionado.toString() == 'HOMEM' && idade < 13) {
-                label.innerText = `De acordo com nossas análise você é um ${sexoSelecionado} de ${idade} anos.`
+    var idade = ano_atual.getFullYear() - nasc.value
+    // VERIFICADOR DE IDADE
+    if (nasc.value.length == 0 || nasc.value > ano_atual.getFullYear()) {
+        label.innerText = 'Por favor, preencha os campos adequadamente.'
+    } else {
+        var sexo = document.getElementsByName('sexrad')
+        var gen = ''
+        if (sexo[0].checked) {
+            gen = 'HOMEM'
+            if (idade >= 0 && idade <= 13) {
+                // CRIANÇA
+                sec.style.height = '650px'
+                img.style.display = 'block'
                 img.src = 'assets/menino.jpg'
-            } else if (sexoSelecionado.toString() == 'HOMEM' && idade > 13 && idade < 18) {
-                label.innerText = `De acordo com nossas análise você é um ${sexoSelecionado} de ${idade} anos.`
+            } else if (idade > 13 && idade <= 18) {
+                // JOVEM
+                sec.style.height = '650px'
+                img.style.display = 'block'
                 img.src = 'assets/hjovem.jpg'
-            } else if (sexoSelecionado.toString() == 'HOMEM' && idade > 18 && idade < 60) {
-                label.innerText = `De acordo com nossas análise você é um ${sexoSelecionado} de ${idade} anos.`
+            } else if (idade > 18 && idade < 60) {
+                // ADULTO
+                sec.style.height = '650px'
+                img.style.display = 'block'
                 img.src = 'assets/hadulto.jpg'
-            } else if (sexoSelecionado.toString() == 'HOMEM' && idade > 60) {
-                label.innerText = `De acordo com nossas análise você é um ${sexoSelecionado} de ${idade} anos.`
+            } else if (idade > 60) {
+                // IDOSO
+                sec.style.height = '650px'
+                img.style.display = 'block'
                 img.src = 'assets/hvelho.jpg'
-            } else if (sexoSelecionado.toString() == 'MULHER' && idade < 13) {
-                label.innerText = `De acordo com nossas análise você é um ${sexoSelecionado} de ${idade} anos.`
+            }
+        } else {
+            gen = 'MULHER'
+            if (idade >= 0 && idade <= 13) {
+                // CRIANÇA
+                sec.style.height = '650px'
+                img.style.display = 'block'
                 img.src = 'assets/menina.jpg'
-            } else if (sexoSelecionado.toString() == 'MULHER' && idade > 13 && idade < 18) {
-                label.innerText = `De acordo com nossas análise você é um ${sexoSelecionado} de ${idade} anos.`
+            } else if (idade > 13 && idade <= 18) {
+                // JOVEM
+                sec.style.height = '650px'
+                img.style.display = 'block'
                 img.src = 'assets/mjovem.jpg'
-            } else if (sexoSelecionado.toString() == 'MULHER' && idade > 18 && idade < 60) {
-                label.innerText = `De acordo com nossas análise você é um ${sexoSelecionado} de ${idade} anos.`
+            } else if (idade > 18 && idade < 60) {
+                // ADULTA
+                sec.style.height = '650px'
+                img.style.display = 'block'
                 img.src = 'assets/madulta.jpg'
-            } else if (sexoSelecionado.toString() == 'MULHER' && idade > 60) {
-                label.innerText = `De acordo com nossas análise você é um ${sexoSelecionado} de ${idade} anos.`
+            } else if (idade > 60) {
+                // IDOSA
+                sec.style.height = '650px'
+                img.style.display = 'block'
                 img.src = 'assets/mvelha.jpg'
-            } else if (sexoSelecionado.toString() == 'HOMEM' && sexoSelecionado.toString() == 'MULHER') {
-                label.innerText = `Por favor, selecione apenas um sexo.`
             }
         }
-    }
+    } 
+    label.innerText = `De acordo com a análise você é ${gen} e tem ${idade} anos.`
 }

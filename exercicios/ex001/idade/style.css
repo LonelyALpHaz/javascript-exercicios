@@ -24,12 +24,14 @@ div#container {
 section {
     background-color: white;
     width: 600px;
-    height: 650px;
+    height: 230px;
     border-radius: 30px;
     margin: auto;
 }
 
 img {
+    margin: auto;
+    display: none;
     width: 400px;
     height: 400px;
     padding-top: 20px;

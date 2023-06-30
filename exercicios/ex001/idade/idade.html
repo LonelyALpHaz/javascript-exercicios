@@ -9,20 +9,23 @@
 <body>
     <h1>Analisador de idade</h1>
     <div id="container">
-        <section>
+        <section id="sec">
             <h2>Forneça os dados</h2>
-            Ano de Nascimento: <input type="year" name="ano" id="nasc"><br><br>
-            Sexo: 
-            <form id="check">
-                <input type="checkbox" name="sexo" value="HOMEM"> Masculino 
-                <input type="checkbox" name="sexo" value="MULHER"> Feminino<br><br>
+            <label for="nasc" style="color: darkslateblue;"><strong>Ano de Nascimento:</strong></label> 
+            <input type="number" name="nasc" id="nasc"><br><br>
+            <form id="form">
+                <label for="sex" style="color: darkslateblue;"><strong>Sexo:</strong></label>
+                <input type="radio" name="sexrad" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="sexrad" id="fem">
+                <label for="fem">Feminino</label><br><br>
+                <input type="button" value="Analisar" id="btn" style="color: darkslateblue;" onclick="analisar()">
             </form>
-            <input type="button" value="Analisar" id="btn" onclick="analisar()"><br>
-            <h3 id="label"></h3>
-            <img id="img" src="placeholder" alt="image">
+            <h3 id="label">Preencha os dados acima para ver o resultado!</h3>
+            <img id="img">
         </section>
     </div>
-    <footer>©CursoemVideo</footer>
+    <footer>&copy; ArthurD.Freire</footer>
     <script src="script.js"></script>
 </body>
 </html>
