@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body {
+    background-color: darkslateblue;
+    font-family: monospace;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color:  white;
+    width: 500px;
+    height: 400px;
+    border-radius: 40px;
+    margin: auto;
+}
+
+footer {
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+}
