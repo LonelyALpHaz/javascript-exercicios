@@ -13,9 +13,21 @@ h1 {
 section {
     background-color:  white;
     width: 400px;
-    height: 190px;
+    height: 230px;
     border-radius: 15px;
+    padding-top: 20px;
     margin: auto;
+}
+
+option {
+    color: darkslateblue;
+    font-weight: 600;
+}
+
+div#selec {
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 25px;
 }
 
 div#data {

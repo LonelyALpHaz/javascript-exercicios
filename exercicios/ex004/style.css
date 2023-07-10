@@ -10,12 +10,35 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    color: darkslateblue;
+    font-weight: 600;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
 section {
     background-color:  white;
-    width: 400px;
-    height: 190px;
+    width: 550px;
+    height: 270px;
     border-radius: 15px;
+    padding-top: 20px;
     margin: auto;
+}
+
+option {
+    color: darkslateblue;
+    font-weight: 600;
+}
+
+option#seclab {
+    width: 175px;
+}
+
+div#selec {
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 25px;
 }
 
 div#data {

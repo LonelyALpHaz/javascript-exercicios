@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Analisador de Números</h1>
+    <div id="data">
+        <section id="section">
+            <label for="lab">Número (entre 1 e 100):</label>
+            <input type="number" name="num" id="num">
+            <input type="button" value="Adicionar" onclick="add()">
+            <div id="selec">
+                <select name="sec" id="sec" size="10" aria-valuemin="1" aria-valuemax="100">
+                    <option id="seclab"></option>
+                </select><br>
+                <input type="button" value="Finalizar" onclick="end()">
+            </div>
+        </section>
+        <footer>&copy; ArthurD.Freire</footer>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

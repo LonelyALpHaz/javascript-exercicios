@@ -4,23 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Laços</title>
+    <title>Contador</title>
 </head>
 <body>
-    <h1>Título</h1>
+    <h1>Contador em javaScript</h1>
     <section>
         <div id="data">
-            <label for="ini" id="ini" style="color: darkslateblue;"><strong>Início</strong></label>
-            <input type="number"><br>
-            <label for="fim" id="ini" style="color: darkslateblue;"><strong>Final</strong></label>
-            <input type="number"><br>
-            <label for="pas" id="pas" style="color: darkslateblue;"><strong>Passo</strong></label>
-            <input type="number"><br><br>
-            <input type="button" value="Começar" onclick="iniciar()" style="color: darkslateblue;">
-            <p id="label" style="font:500 ; color: darkslateblue;"><strong>Preparando a contagem...</strong></p>
-        </div>
-    </section>
-    <footer>&copy;ArthurD.Freire</footer>
-    <script src="script.js"></script>r
+            <label for="inicio" >Início:</label>
+            <input type="number" name="inpt" id="inicio"><br>
+            <label for="final" >Final:</label>
+            <input type="number" name="inpt" id="fim"><br>
+            <label for="passo">Passo:</label>
+            <input type="number" name="inpt" id="passo"><br>
+            <input type="button" value="Iniciar" id="btn" onclick="iniciar()"><br><br>
+            <label for="label" id="lab">Clique em "Iniciar" para começar!</label>
+        </section>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
